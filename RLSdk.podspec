@@ -9,34 +9,21 @@
 Pod::Spec.new do |s|
   s.name             = 'RLSdk'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RLSdk.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+  s.summary          = 'A lightweight and flexible SDK for advanced iOS development.'
+  s.description      = 'RLSdk provides powerful tools for iOS app development, including features like XYZ.'
   s.homepage         = 'https://github.com/numanayhan/RLSdk'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'numanayhan' => 'numanayhan@yandex.com' }
   s.source           = { :git => 'https://github.com/numanayhan/RLSdk.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.ios.deployment_target = '12.0'
+  s.swift_versions   = ['5.0', '5.1', '5.2', '5.3', '5.4', '5.5', '5.6']
+  s.source_files     = 'RLSdk/Classes/**/*'
 
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'RLSdk/Classes/**/*'
-  
+  # Uncomment this if you have assets to include
   # s.resource_bundles = {
   #   'RLSdk' => ['RLSdk/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # Uncomment if you have public headers
+  # s.public_header_files = 'RLSdk/Classes/**/*.h'
 end
