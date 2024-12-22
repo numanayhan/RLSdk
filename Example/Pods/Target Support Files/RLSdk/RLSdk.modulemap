@@ -1,0 +1,6 @@
+framework module RLSdk {
+  umbrella header "RLSdk-umbrella.h"
+
+  export *
+  module * { export * }
+}
